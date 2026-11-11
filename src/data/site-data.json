@@ -1,0 +1,903 @@
+{
+  "app": "adeebtechlab-app",
+  "version": 1,
+  "updatedAt": 1794391910779,
+  "settings": {
+    "companyName": "Adeeb Technology Lab",
+    "tagline": "App Development / Software House",
+    "established": 2016,
+    "heroTitle": "Mobile apps that put your business in every pocket.",
+    "heroText": "We design, build and publish Android, iOS and cross-platform apps for schools, businesses and media brands in Pakistan and abroad, from the first screen design to the store launch and every update after.",
+    "heroWords": [
+      "Android apps",
+      "iOS apps",
+      "Flutter apps",
+      "education apps",
+      "sticker apps",
+      "app admin panels"
+    ],
+    "whatsappNumber": "923092333121",
+    "whatsappDisplay": "+92 309 2333121",
+    "whatsappMessage": "Hi Adeeb Technology Lab, I'd like to discuss a mobile app.",
+    "email": "info.AdeebTechLab@gmail.com",
+    "hours": "Mon to Sat, 10 AM to 10 PM",
+    "offices": [
+      {
+        "city": "Bahawalpur",
+        "address": "Bhatta No. 1 Chowk, Gulberg Road, Abbas Colony St No. 2, Bahawalpur",
+        "phone": "0339 3900444"
+      },
+      {
+        "city": "Islamabad",
+        "address": "Lane F, Ghora Sardar Road, Mehrban Town Block C, Islamabad",
+        "phone": "0309 2333121"
+      }
+    ],
+    "socials": [
+      {
+        "name": "LinkedIn",
+        "icon": "linkedin",
+        "url": "https://www.linkedin.com/company/AdeebTechnologyLab/"
+      },
+      {
+        "name": "Facebook",
+        "icon": "facebook",
+        "url": "https://www.facebook.com/AdeebTechnologyLab"
+      },
+      {
+        "name": "Instagram",
+        "icon": "instagram",
+        "url": "https://www.instagram.com/adeebtechlab/"
+      },
+      {
+        "name": "YouTube",
+        "icon": "youtube",
+        "url": "https://www.youtube.com/AdeebTechnologyLab"
+      },
+      {
+        "name": "GitHub",
+        "icon": "github",
+        "url": "https://github.com/AdeebTechLab"
+      },
+      {
+        "name": "X",
+        "icon": "x",
+        "url": "https://x.com/AdeebTechLab"
+      },
+      {
+        "name": "TikTok",
+        "icon": "tiktok",
+        "url": "https://www.tiktok.com/@adeebtechnologylab"
+      },
+      {
+        "name": "Google Play",
+        "icon": "googleplay",
+        "url": "https://play.google.com/store/apps/dev?id=6026600562723209564"
+      },
+      {
+        "name": "Threads",
+        "icon": "threads",
+        "url": "https://www.threads.com/@adeebtechlab"
+      },
+      {
+        "name": "Pinterest",
+        "icon": "pinterest",
+        "url": "https://www.pinterest.com/adeebtechnologylab/"
+      },
+      {
+        "name": "WhatsApp channel",
+        "icon": "whatsapp",
+        "url": "https://www.whatsapp.com/channel/0029VaCeeBg4inos1Eqtbc43"
+      }
+    ],
+    "ceo": {
+      "name": "Salman Adeeb",
+      "role": "CEO & Founder",
+      "photo": "https://adeeb-technology-lab-website.vercel.app/assets/salmanadeeb.jpeg",
+      "bio": "I am the CEO of Adeeb Technology Lab. I'm a developer, graphic designer, video editor and cybersecurity expert, and I have been working in technology for almost eight years.\n\nI have worked with organisations including IUB, AndroidBull, Raham TV and GCT Bahawalpur. Today our team designs and builds mobile apps for colleges, media brands and businesses, from the first idea to the store launch and beyond.",
+      "highlights": [
+        "Founded Adeeb Technology Lab in 2016",
+        "Apps published on Google Play",
+        "Developer, designer and cybersecurity expert",
+        "Offices in Bahawalpur and Islamabad"
+      ],
+      "portfolioUrl": "https://portfolio-website-single-page-3-d.vercel.app/",
+      "linkedinUrl": ""
+    },
+    "process": [
+      {
+        "title": "Discuss your app idea",
+        "text": "Tell us about your idea on WhatsApp or a call. We learn who will use the app, what they need to do in it and which platforms you need."
+      },
+      {
+        "title": "Plan and design the screens",
+        "text": "We list the features, map how users move through the app and design every screen. You approve the look before we write any code."
+      },
+      {
+        "title": "Develop",
+        "text": "We build the app, its backend and the admin panel, and share test builds so you can try progress on your own phone."
+      },
+      {
+        "title": "Test on real devices",
+        "text": "We test on different phones, screen sizes and Android or iOS versions, check speed and offline behaviour, and fix every issue before launch."
+      },
+      {
+        "title": "Publish to the stores",
+        "text": "We prepare the store listing, icon, screenshots and privacy policy and publish the app on Google Play and the App Store under your account."
+      },
+      {
+        "title": "Support and updates",
+        "text": "We stay available for updates, new features, store policy changes and support after launch."
+      }
+    ]
+  },
+  "services": [
+    {
+      "id": "svc-android-apps",
+      "slug": "android-apps",
+      "name": "Android App Development",
+      "description": "Fast, reliable Android apps for phones and tablets, built to Google Play standards.",
+      "icon": "smartphone",
+      "order": 1
+    },
+    {
+      "id": "svc-ios-apps",
+      "slug": "ios-apps",
+      "name": "iOS App Development",
+      "description": "iPhone and iPad apps that follow Apple’s design guidelines and are ready for the App Store.",
+      "icon": "tablet-smartphone",
+      "order": 2
+    },
+    {
+      "id": "svc-cross-platform-apps",
+      "slug": "cross-platform-apps",
+      "name": "Cross-Platform Apps",
+      "description": "One codebase for Android and iOS with Flutter or React Native, to launch on both stores sooner.",
+      "icon": "layers",
+      "order": 3
+    },
+    {
+      "id": "svc-app-ui-ux-design",
+      "slug": "app-ui-ux-design",
+      "name": "App UI/UX Design",
+      "description": "Clear, friendly screens and user flows, designed and approved before development starts.",
+      "icon": "pen-tool",
+      "order": 4
+    },
+    {
+      "id": "svc-backend-apis",
+      "slug": "backend-apis",
+      "name": "Backend, APIs & Databases",
+      "description": "Logins, databases, cloud storage and APIs that keep your app’s data safe and in sync.",
+      "icon": "database",
+      "order": 5
+    },
+    {
+      "id": "svc-admin-panels",
+      "slug": "admin-panels",
+      "name": "Admin Panels for Apps",
+      "description": "A web dashboard to manage your app’s users, content, orders and notifications.",
+      "icon": "layout-dashboard",
+      "order": 6
+    },
+    {
+      "id": "svc-education-apps",
+      "slug": "education-apps",
+      "name": "Education & Portal Apps",
+      "description": "Apps for colleges, departments and academies: portals, class apps and learning resources.",
+      "icon": "graduation-cap",
+      "order": 7
+    },
+    {
+      "id": "svc-business-apps",
+      "slug": "business-apps",
+      "name": "Business & E-commerce Apps",
+      "description": "Catalogue, ordering, booking and loyalty apps that bring customers back to your business.",
+      "icon": "shopping-cart",
+      "order": 8
+    },
+    {
+      "id": "svc-sticker-apps",
+      "slug": "sticker-apps",
+      "name": "Sticker Apps",
+      "description": "Branded sticker packs for WhatsApp that your community can install from Google Play.",
+      "icon": "sticker",
+      "order": 9
+    },
+    {
+      "id": "svc-push-notifications",
+      "slug": "push-notifications",
+      "name": "Push Notifications & Integrations",
+      "description": "Push notifications, payments, maps, WhatsApp and other services connected to your app.",
+      "icon": "bell",
+      "order": 10
+    },
+    {
+      "id": "svc-store-publishing",
+      "slug": "store-publishing",
+      "name": "App Store Publishing",
+      "description": "Store listing, screenshots, privacy policy and release on Google Play and the App Store.",
+      "icon": "store",
+      "order": 11
+    },
+    {
+      "id": "svc-desktop-extensions",
+      "slug": "desktop-extensions",
+      "name": "Desktop Apps & Browser Extensions",
+      "description": "Windows apps and Chrome extensions that put your service on computers too.",
+      "icon": "monitor",
+      "order": 12
+    },
+    {
+      "id": "svc-app-maintenance",
+      "slug": "app-maintenance",
+      "name": "App Maintenance & Updates",
+      "description": "Bug fixes, new Android and iOS versions, store policy updates and new features after launch.",
+      "icon": "wrench",
+      "order": 13
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-education",
+      "slug": "education-apps",
+      "name": "Education apps",
+      "description": "Apps for colleges, departments and students: portals, class apps and learning resources.",
+      "icon": "graduation-cap",
+      "order": 1
+    },
+    {
+      "id": "cat-media",
+      "slug": "media-apps",
+      "name": "Media apps",
+      "description": "Apps that help TV channels and media brands reach their audience on mobile.",
+      "icon": "tv",
+      "order": 2
+    },
+    {
+      "id": "cat-stickers",
+      "slug": "sticker-apps",
+      "name": "Sticker apps",
+      "description": "Branded sticker packs for WhatsApp, published on Google Play.",
+      "icon": "sticker",
+      "order": 3
+    },
+    {
+      "id": "cat-business",
+      "slug": "business-apps",
+      "name": "Business apps",
+      "description": "Apps for shops, services and companies: catalogues, ordering, bookings and customer accounts.",
+      "icon": "store",
+      "order": 4
+    }
+  ],
+  "technologies": [
+    {
+      "id": "tech-android",
+      "name": "Android",
+      "icon": "android",
+      "group": "Mobile frameworks",
+      "order": 1,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-flutter",
+      "name": "Flutter",
+      "icon": "flutter",
+      "group": "Mobile frameworks",
+      "order": 2,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-reactnative",
+      "name": "React Native",
+      "icon": "reactnative",
+      "group": "Mobile frameworks",
+      "order": 3,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-jetpackcompose",
+      "name": "Jetpack Compose",
+      "icon": "jetpackcompose",
+      "group": "Mobile frameworks",
+      "order": 4,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-kotlin",
+      "name": "Kotlin",
+      "icon": "kotlin",
+      "group": "Languages",
+      "order": 5,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-java",
+      "name": "Java",
+      "icon": "java",
+      "group": "Languages",
+      "order": 6,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-dart",
+      "name": "Dart",
+      "icon": "dart",
+      "group": "Languages",
+      "order": 7,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-javascript",
+      "name": "JavaScript",
+      "icon": "javascript",
+      "group": "Languages",
+      "order": 8,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-typescript",
+      "name": "TypeScript",
+      "icon": "typescript",
+      "group": "Languages",
+      "order": 9,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-firebase",
+      "name": "Firebase",
+      "icon": "firebase",
+      "group": "Backend & Cloud",
+      "order": 10,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-nodejs",
+      "name": "Node.js",
+      "icon": "nodejs",
+      "group": "Backend & Cloud",
+      "order": 11,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-express",
+      "name": "Express",
+      "icon": "express",
+      "group": "Backend & Cloud",
+      "order": 12,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-mongodb",
+      "name": "MongoDB",
+      "icon": "mongodb",
+      "group": "Backend & Cloud",
+      "order": 13,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-mysql",
+      "name": "MySQL",
+      "icon": "mysql",
+      "group": "Backend & Cloud",
+      "order": 14,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-sqlite",
+      "name": "SQLite",
+      "icon": "sqlite",
+      "group": "Backend & Cloud",
+      "order": 15,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-php",
+      "name": "PHP",
+      "icon": "php",
+      "group": "Backend & Cloud",
+      "order": 16,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-figma",
+      "name": "Figma",
+      "icon": "figma",
+      "group": "Design & Tools",
+      "order": 17,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-androidstudio",
+      "name": "Android Studio",
+      "icon": "androidstudio",
+      "group": "Design & Tools",
+      "order": 18,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-git",
+      "name": "Git",
+      "icon": "git",
+      "group": "Design & Tools",
+      "order": 19,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-github",
+      "name": "GitHub",
+      "icon": "github",
+      "group": "Design & Tools",
+      "order": 20,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-postman",
+      "name": "Postman",
+      "icon": "postman",
+      "group": "Design & Tools",
+      "order": 21,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-gradle",
+      "name": "Gradle",
+      "icon": "gradle",
+      "group": "Design & Tools",
+      "order": 22,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-googleplay",
+      "name": "Google Play",
+      "icon": "googleplay",
+      "group": "Publishing & Growth",
+      "order": 23,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-appstore",
+      "name": "App Store",
+      "icon": "appstore",
+      "group": "Publishing & Growth",
+      "order": 24,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-chromewebstore",
+      "name": "Chrome Web Store",
+      "icon": "chromewebstore",
+      "group": "Publishing & Growth",
+      "order": 25,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-googleadmob",
+      "name": "Google AdMob",
+      "icon": "googleadmob",
+      "group": "Publishing & Growth",
+      "order": 26,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-googleanalytics",
+      "name": "Google Analytics",
+      "icon": "googleanalytics",
+      "group": "Publishing & Growth",
+      "order": 27,
+      "showOnSite": true
+    },
+    {
+      "id": "tech-cloudinary",
+      "name": "Cloudinary",
+      "icon": "cloudinary",
+      "group": "Publishing & Growth",
+      "order": 28,
+      "showOnSite": true
+    }
+  ],
+  "clients": [
+    {
+      "id": "client-1",
+      "name": "GCT Bahawalpur",
+      "logo": "https://res.cloudinary.com/adeeb-tech-lab/image/upload/v1757196734/Company%20Logo/gct_bwp_LOGO_omkrsw.png",
+      "website": "",
+      "industry": "Education",
+      "testimonial": null,
+      "showOnSite": true,
+      "order": 1
+    },
+    {
+      "id": "client-2",
+      "name": "GCT for Women Bahawalpur",
+      "logo": "https://res.cloudinary.com/adeeb-tech-lab/image/upload/v1757196838/Company%20Logo/gct_woman_oswabi.png",
+      "website": "",
+      "industry": "Education",
+      "testimonial": null,
+      "showOnSite": true,
+      "order": 2
+    },
+    {
+      "id": "client-3",
+      "name": "Department of Information Security",
+      "logo": "https://res.cloudinary.com/adeeb-tech-lab/image/upload/v1757196680/Company%20Logo/The_Department_of_Information_Security_fhbblu.png",
+      "website": "",
+      "industry": "Education",
+      "testimonial": null,
+      "showOnSite": true,
+      "order": 3
+    },
+    {
+      "id": "client-4",
+      "name": "Raham TV",
+      "logo": "https://res.cloudinary.com/adeeb-tech-lab/image/upload/v1757196623/Company%20Logo/unnamed_zdfeih.png",
+      "website": "",
+      "industry": "Media",
+      "testimonial": null,
+      "showOnSite": true,
+      "order": 4
+    },
+    {
+      "id": "client-5",
+      "name": "IUB",
+      "logo": "",
+      "website": "",
+      "industry": "Education",
+      "testimonial": null,
+      "showOnSite": true,
+      "order": 5
+    },
+    {
+      "id": "client-6",
+      "name": "AndroidBull",
+      "logo": "",
+      "website": "",
+      "industry": "Technology",
+      "testimonial": null,
+      "showOnSite": true,
+      "order": 6
+    }
+  ],
+  "projects": [
+    {
+      "description": "IUB Portals brings the portals and resources that IUB students use every day into a single app on their phone.\n\nThe same hub is also available as a website, a Windows app and a Chrome extension, so students can open it wherever they are.",
+      "coverImage": {
+        "url": "/covers/iub-portals.jpg",
+        "alt": "IUB Portals feature banner: the app dashboard on a phone with its key features listed"
+      },
+      "logo": "https://res.cloudinary.com/adeeb-tech-lab/image/upload/v1757196675/Company%20Logo/IUB_Portals_Logo_copy_rpgxkx.png",
+      "gallery": [],
+      "categoryIds": [
+        "cat-education"
+      ],
+      "serviceIds": [
+        "svc-android-apps",
+        "svc-education-apps",
+        "svc-desktop-extensions",
+        "svc-store-publishing"
+      ],
+      "clientId": "",
+      "technologies": [
+        "Android",
+        "Windows",
+        "Chrome Extension"
+      ],
+      "features": [
+        "Quick links to essential IUB student portals",
+        "Academic tools and university resources in one place",
+        "Also available as a website, Windows app and Chrome extension"
+      ],
+      "problem": "Students had to remember and search for many separate portal links and university resources.",
+      "solution": "One app with organised links to the portals and resources students need, also available on the web, on Windows and in Chrome.",
+      "platforms": [
+        "android",
+        "web",
+        "windows",
+        "chrome"
+      ],
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.AdeebTechLab.IUBportals",
+      "appStoreUrl": "",
+      "liveUrl": "https://iub-portals-all-in-one-website.vercel.app/",
+      "sourceUrl": "",
+      "extraLinks": [
+        {
+          "label": "Microsoft Store",
+          "url": "https://apps.microsoft.com/detail/9PL653TPWDCH?hl=en-us&gl=PK&ocid=pdpshare"
+        },
+        {
+          "label": "Chrome extension",
+          "url": "https://chromewebstore.google.com/detail/iub-portals-all-in-one/jdnbbflemleecikpjliaijdgijmmnjfk"
+        }
+      ],
+      "completedAt": "",
+      "status": "completed",
+      "published": true,
+      "featured": true,
+      "order": 1,
+      "createdAt": 1794355200000,
+      "updatedAt": 1794391910779,
+      "id": "p-iub-portals",
+      "slug": "iub-portals",
+      "title": "IUB Portals",
+      "summary": "An Android app that gives IUB students one place to reach their university portals, academic tools and resources."
+    },
+    {
+      "description": "The official Adeeb Technology Lab app gives our students and community a quick way to reach the lab from their phones.\n\nIt is also available as a Windows app and a Chrome extension.",
+      "coverImage": {
+        "url": "/covers/adeeb-tech-lab-app.jpg",
+        "alt": "Adeeb Tech Lab feature banner: the app home screen with tech tips categories on two phones"
+      },
+      "logo": "https://res.cloudinary.com/adeeb-tech-lab/image/upload/v1757196590/Company%20Logo/512_exyyiy.png",
+      "gallery": [],
+      "categoryIds": [
+        "cat-education"
+      ],
+      "serviceIds": [
+        "svc-android-apps",
+        "svc-education-apps",
+        "svc-desktop-extensions",
+        "svc-store-publishing"
+      ],
+      "clientId": "",
+      "technologies": [
+        "Android",
+        "Windows",
+        "Chrome Extension"
+      ],
+      "features": [],
+      "problem": "",
+      "solution": "",
+      "platforms": [
+        "android",
+        "windows",
+        "chrome"
+      ],
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.adeebtechlab.apps",
+      "appStoreUrl": "",
+      "liveUrl": "https://adeeb-technology-lab-website.vercel.app/",
+      "sourceUrl": "",
+      "extraLinks": [
+        {
+          "label": "Microsoft Store",
+          "url": "https://apps.microsoft.com/detail/9p3369qx7kfx?hl=en-us&gl=US"
+        },
+        {
+          "label": "Chrome extension",
+          "url": "https://chromewebstore.google.com/detail/adeeb-technology-lab/hmgnckmfplfccnkinmmlmicpldfpnhme"
+        }
+      ],
+      "completedAt": "",
+      "status": "completed",
+      "published": true,
+      "featured": true,
+      "order": 2,
+      "createdAt": 1794355200000,
+      "updatedAt": 1794391910779,
+      "id": "p-adeeb-tech-lab-app",
+      "slug": "adeeb-tech-lab-app",
+      "title": "Adeeb Tech Lab",
+      "summary": "Our official Android app, putting Adeeb Technology Lab’s courses, free resources and updates on students’ phones."
+    },
+    {
+      "description": "We built the GCT BWP College app for GCT Bahawalpur and published it on Google Play.",
+      "coverImage": {
+        "url": "/covers/gct-bwp-college.jpg",
+        "alt": "GCT BWP College feature banner: the college app menu, departments and information screens"
+      },
+      "logo": "https://res.cloudinary.com/adeeb-tech-lab/image/upload/v1757196734/Company%20Logo/gct_bwp_LOGO_omkrsw.png",
+      "gallery": [],
+      "categoryIds": [
+        "cat-education"
+      ],
+      "serviceIds": [
+        "svc-android-apps",
+        "svc-education-apps",
+        "svc-store-publishing"
+      ],
+      "clientId": "client-1",
+      "technologies": [
+        "Android"
+      ],
+      "features": [],
+      "problem": "",
+      "solution": "",
+      "platforms": [
+        "android"
+      ],
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.AdeebTechLab.GCT.BWP.College",
+      "appStoreUrl": "",
+      "liveUrl": "",
+      "sourceUrl": "",
+      "extraLinks": [],
+      "completedAt": "",
+      "status": "completed",
+      "published": true,
+      "featured": true,
+      "order": 3,
+      "createdAt": 1794355200000,
+      "updatedAt": 1794391910779,
+      "id": "p-gct-bwp-college",
+      "slug": "gct-bwp-college",
+      "title": "GCT BWP College",
+      "summary": "An Android app for GCT Bahawalpur, so students can reach college information and updates from their phones."
+    },
+    {
+      "description": "We built this class app for the Department of Information Security and published it on Google Play. The department also has a companion website.",
+      "coverImage": {
+        "url": "/covers/dpt-information-security.jpg",
+        "alt": "Dpt Information Security feature banner: the class app with study plan, timetable and updates screens"
+      },
+      "logo": "https://res.cloudinary.com/adeeb-tech-lab/image/upload/v1757196680/Company%20Logo/The_Department_of_Information_Security_fhbblu.png",
+      "gallery": [],
+      "categoryIds": [
+        "cat-education"
+      ],
+      "serviceIds": [
+        "svc-android-apps",
+        "svc-education-apps",
+        "svc-store-publishing"
+      ],
+      "clientId": "client-3",
+      "technologies": [
+        "Android"
+      ],
+      "features": [],
+      "problem": "",
+      "solution": "",
+      "platforms": [
+        "android",
+        "web"
+      ],
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.AdeebTechLab.BsISClass",
+      "appStoreUrl": "",
+      "liveUrl": "https://information-sekurity.blogspot.com/",
+      "sourceUrl": "",
+      "extraLinks": [],
+      "completedAt": "",
+      "status": "completed",
+      "published": true,
+      "featured": false,
+      "order": 4,
+      "createdAt": 1794355200000,
+      "updatedAt": 1794391910779,
+      "id": "p-info-security",
+      "slug": "dpt-information-security",
+      "title": "Dpt Information Security",
+      "summary": "An Android class app for the Department of Information Security, giving students quick access to class information and resources."
+    },
+    {
+      "description": "We built the Raham TV app for the Raham TV media brand and published it on Google Play.\n\nWe also made a Raham TV sticker app for fans to share in their chats.",
+      "coverImage": {
+        "url": "/covers/raham-tv.jpg",
+        "alt": "Raham TV feature banner: the Islamic app with its programme list and timings"
+      },
+      "logo": "https://res.cloudinary.com/adeeb-tech-lab/image/upload/v1757196623/Company%20Logo/unnamed_zdfeih.png",
+      "gallery": [],
+      "categoryIds": [
+        "cat-media"
+      ],
+      "serviceIds": [
+        "svc-android-apps",
+        "svc-store-publishing"
+      ],
+      "clientId": "client-4",
+      "technologies": [
+        "Android"
+      ],
+      "features": [],
+      "problem": "",
+      "solution": "",
+      "platforms": [
+        "android"
+      ],
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.AdeebTechLab.RahamTV",
+      "appStoreUrl": "",
+      "liveUrl": "",
+      "sourceUrl": "",
+      "extraLinks": [
+        {
+          "label": "Raham TV sticker app (download)",
+          "url": "https://drive.google.com/file/d/1yFjgzTokZQVjD0CdQZYBCbrkJC1zGhwZ/view?usp=sharing"
+        }
+      ],
+      "completedAt": "",
+      "status": "completed",
+      "published": true,
+      "featured": false,
+      "order": 5,
+      "createdAt": 1794355200000,
+      "updatedAt": 1794391910779,
+      "id": "p-raham-tv",
+      "slug": "raham-tv",
+      "title": "Raham TV",
+      "summary": "An Android app for Raham TV, so viewers can follow the channel from their phones."
+    },
+    {
+      "description": "A sticker pack app that lets IUB students add IUB Portals stickers to WhatsApp, published on Google Play.",
+      "coverImage": {
+        "url": "/covers/iub-portals-stickers.jpg",
+        "alt": "IUB WhatsApp Sticker feature banner: IUB sticker packs ready to add to WhatsApp"
+      },
+      "logo": "https://res.cloudinary.com/adeeb-tech-lab/image/upload/v1757196675/Company%20Logo/IUB_Portals_Logo_copy_rpgxkx.png",
+      "gallery": [],
+      "categoryIds": [
+        "cat-stickers"
+      ],
+      "serviceIds": [
+        "svc-sticker-apps",
+        "svc-store-publishing"
+      ],
+      "clientId": "",
+      "technologies": [
+        "Android",
+        "WhatsApp Stickers"
+      ],
+      "features": [],
+      "problem": "",
+      "solution": "",
+      "platforms": [
+        "android"
+      ],
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.AdeebTechLab.IUBWhatsAppSticker",
+      "appStoreUrl": "",
+      "liveUrl": "",
+      "sourceUrl": "",
+      "extraLinks": [],
+      "completedAt": "",
+      "status": "completed",
+      "published": true,
+      "featured": false,
+      "order": 6,
+      "createdAt": 1794355200000,
+      "updatedAt": 1794391910779,
+      "id": "p-iub-stickers",
+      "slug": "iub-portals-stickers",
+      "title": "IUB Portals Stickers",
+      "summary": "A WhatsApp sticker app for IUB students, with IUB Portals stickers to share in their chats."
+    },
+    {
+      "description": "A branded sticker pack app for the Adeeb Technology Lab community, published on Google Play.",
+      "coverImage": {
+        "url": "/covers/adeeb-tech-lab-stickers.jpg",
+        "alt": "Adeeb Tech Lab WhatsApp Sticker feature banner: sticker packs ready to add to WhatsApp"
+      },
+      "logo": "https://res.cloudinary.com/adeeb-tech-lab/image/upload/v1757196590/Company%20Logo/512_exyyiy.png",
+      "gallery": [],
+      "categoryIds": [
+        "cat-stickers"
+      ],
+      "serviceIds": [
+        "svc-sticker-apps",
+        "svc-store-publishing"
+      ],
+      "clientId": "",
+      "technologies": [
+        "Android",
+        "WhatsApp Stickers"
+      ],
+      "features": [],
+      "problem": "",
+      "solution": "",
+      "platforms": [
+        "android"
+      ],
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.AdeebTechLab.AdeebTechLabSticker",
+      "appStoreUrl": "",
+      "liveUrl": "",
+      "sourceUrl": "",
+      "extraLinks": [],
+      "completedAt": "",
+      "status": "completed",
+      "published": true,
+      "featured": false,
+      "order": 7,
+      "createdAt": 1794355200000,
+      "updatedAt": 1794391910779,
+      "id": "p-atl-stickers",
+      "slug": "adeeb-tech-lab-stickers",
+      "title": "Adeeb Tech Lab Stickers",
+      "summary": "A sticker app with Adeeb Technology Lab stickers for our students and community to share in WhatsApp chats."
+    }
+  ]
+}

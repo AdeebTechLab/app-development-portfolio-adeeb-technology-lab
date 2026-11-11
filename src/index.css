@@ -1,0 +1,277 @@
+@import "tailwindcss";
+
+/* Dark is the default theme (same as adeebtechlab.com). data-theme="light" switches it. */
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme inline {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --color-page: var(--page);
+  --color-page-deep: var(--page-deep);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-ink-faint: var(--ink-faint);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-accent-deep: var(--accent-deep);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-text: var(--accent-text);
+  --color-on-accent: var(--on-accent);
+  --color-whatsapp: #25d366;
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-info-soft: var(--info-soft);
+  --color-info: var(--info);
+}
+
+/* Brand palette from adeebtechlab.com */
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #222d38;
+  --page-deep: #1a232c;
+  --surface: #2b3743;
+  --surface-2: #334150;
+  --ink: #ffffff;
+  --ink-muted: rgba(255, 255, 255, 0.74);
+  --ink-faint: rgba(255, 255, 255, 0.54);
+  --line: rgba(255, 255, 255, 0.12);
+  --line-strong: rgba(255, 255, 255, 0.22);
+  --accent: #ff8e01;
+  --accent-deep: #cc7101;
+  --accent-soft: rgba(255, 142, 1, 0.13);
+  --accent-text: #ffa53a;
+  --on-accent: #1a232c;
+  --danger: #ff7b72;
+  --danger-soft: rgba(255, 123, 114, 0.14);
+  --success: #4ade80;
+  --success-soft: rgba(74, 222, 128, 0.14);
+  --info: #7cc4ff;
+  --info-soft: rgba(124, 196, 255, 0.14);
+  --dot: rgba(255, 255, 255, 0.05);
+  --glow: rgba(255, 142, 1, 0.1);
+  --shadow: 0 18px 40px -18px rgba(0, 0, 0, 0.55);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --page: #f4f6f8;
+  --page-deep: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #eef1f4;
+  --ink: #222d38;
+  --ink-muted: rgba(34, 45, 56, 0.76);
+  --ink-faint: rgba(34, 45, 56, 0.56);
+  --line: rgba(34, 45, 56, 0.12);
+  --line-strong: rgba(34, 45, 56, 0.24);
+  --accent: #ff8e01;
+  --accent-deep: #cc7101;
+  --accent-soft: rgba(255, 142, 1, 0.12);
+  --accent-text: #a35700;
+  --on-accent: #1a232c;
+  --danger: #c2372c;
+  --danger-soft: rgba(194, 55, 44, 0.1);
+  --success: #157a3d;
+  --success-soft: rgba(21, 122, 61, 0.1);
+  --info: #1f6fb2;
+  --info-soft: rgba(31, 111, 178, 0.1);
+  --dot: rgba(34, 45, 56, 0.06);
+  --glow: rgba(255, 142, 1, 0.08);
+  --shadow: 0 18px 40px -20px rgba(34, 45, 56, 0.25);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    color: var(--ink);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: var(--page);
+    /* Dot grid + soft orange glow, as on adeebtechlab.com */
+    background-image:
+      radial-gradient(circle at 1px 1px, var(--dot) 1px, transparent 0),
+      radial-gradient(ellipse 900px 560px at 12% -10%, var(--glow), transparent 60%),
+      radial-gradient(ellipse 1000px 700px at 50% 115%, var(--glow), transparent 65%);
+    background-size: 28px 28px, auto, auto;
+    background-attachment: scroll;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  ::selection {
+    background: var(--accent);
+    color: var(--on-accent);
+  }
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  h1, h2, h3, h4 {
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+@layer components {
+  .container-x {
+    width: 100%;
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+  @media (min-width: 640px) {
+    .container-x { padding-inline: 1.5rem; }
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 2.75rem;
+    padding: 0.6rem 1.15rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    transition: background-color 0.18s, border-color 0.18s, color 0.18s, transform 0.18s;
+    cursor: pointer;
+  }
+  .btn:active { transform: translateY(1px); }
+  .btn:disabled { opacity: 0.55; cursor: not-allowed; }
+  .btn-primary { background: var(--accent); color: var(--on-accent); }
+  .btn-primary:hover:not(:disabled) { background: var(--accent-deep); }
+  .btn-outline { border: 1px solid var(--line-strong); color: var(--ink); background: transparent; }
+  .btn-outline:hover:not(:disabled) { border-color: var(--accent); color: var(--accent-text); }
+  .btn-ghost { color: var(--ink-muted); background: transparent; }
+  .btn-ghost:hover:not(:disabled) { color: var(--ink); background: var(--surface-2); }
+  .btn-whatsapp { background: #25d366; color: #0b2e18; }
+  .btn-whatsapp:hover:not(:disabled) { background: #1fb457; }
+  .btn-danger { background: var(--danger); color: #fff; }
+  .btn-danger:hover:not(:disabled) { filter: brightness(0.92); }
+  .btn-sm { min-height: 2.25rem; padding: 0.4rem 0.8rem; font-size: 0.85rem; border-radius: 0.6rem; }
+  .btn-icon { min-height: 2.5rem; width: 2.5rem; padding: 0; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 1rem;
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    background: var(--surface-2);
+    color: var(--ink-muted);
+    border: 1px solid var(--line);
+  }
+  .chip-accent { background: var(--accent-soft); color: var(--accent-text); border-color: transparent; }
+
+  .field-label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.35rem;
+  }
+  .field-hint { font-size: 0.78rem; color: var(--ink-faint); margin-top: 0.3rem; }
+  .input {
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.6rem 0.85rem;
+    border-radius: 0.7rem;
+    border: 1px solid var(--line-strong);
+    background: var(--page-deep);
+    color: var(--ink);
+    font: inherit;
+    font-size: 0.95rem;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .input::placeholder { color: var(--ink-faint); }
+  .input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+  textarea.input { min-height: 7rem; resize: vertical; line-height: 1.55; }
+  select.input { appearance: none; background-image: linear-gradient(45deg, transparent 50%, var(--ink-faint) 50%), linear-gradient(135deg, var(--ink-faint) 50%, transparent 50%); background-position: calc(100% - 18px) 50%, calc(100% - 13px) 50%; background-size: 5px 5px; background-repeat: no-repeat; padding-right: 2.25rem; }
+
+  .prose-body p + p { margin-top: 0.9rem; }
+}
+
+/* Moving pulse along the hero circuit lines */
+@keyframes trace {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -240; }
+}
+.circuit-pulse {
+  stroke-dasharray: 18 222;
+  animation: trace 4.5s linear infinite;
+}
+@keyframes rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+.hero-rise > * {
+  animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.hero-rise > *:nth-child(2) { animation-delay: 0.08s; }
+.hero-rise > *:nth-child(3) { animation-delay: 0.16s; }
+.hero-rise > *:nth-child(4) { animation-delay: 0.24s; }
+.hero-rise > *:nth-child(5) { animation-delay: 0.32s; }
+
+@keyframes caret { 50% { opacity: 0; } }
+.type-caret { animation: caret 1s steps(1) infinite; }
+
+@keyframes ring {
+  0% { transform: scale(1); opacity: 0.55; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+.wa-ring { animation: ring 2.4s ease-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .circuit-pulse, .wa-ring, .type-caret, .hero-rise > * { animation: none !important; }
+  * { transition-duration: 0.01ms !important; }
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+@media print {
+  :root, :root[data-theme="dark"], :root[data-theme="light"] {
+    color-scheme: light;
+    --page: #fff;
+    --page-deep: #fff;
+    --surface: #fff;
+    --surface-2: #f2f2f2;
+    --ink: #111;
+    --ink-muted: #333;
+    --ink-faint: #555;
+    --line: #ccc;
+    --line-strong: #999;
+  }
+  body { color: #111; background: #fff !important; background-image: none !important; font-size: 11pt; }
+  .site-header, .site-footer, nav[aria-label="Main"], nav[aria-label="Mobile"], .fixed, button, .wa-ring { display: none !important; }
+  main { display: block !important; }
+  a { color: inherit; text-decoration: underline; }
+  .card { break-inside: avoid; box-shadow: none !important; }
+  section, article, figure { break-inside: avoid-page; }
+  details:not([open]) > *:not(summary) { display: block !important; }
+  .hero-rise > *, .circuit-pulse, .type-caret { animation: none !important; }
+}

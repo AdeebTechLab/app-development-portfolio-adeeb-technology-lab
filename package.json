@@ -1,0 +1,32 @@
+{
+  "name": "adeebtechlab-app",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Adeeb Tech Lab app development portfolio with a browser-based admin panel (Vite + React + TypeScript).",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc -b",
+    "build": "tsc -b && vite build",
+    "build:preview": "tsc -b && vite build --mode preview",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lucide-react": "^1.57.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router": "7.18.4",
+    "simple-icons": "^16.35.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "5.2.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "5.9.3",
+    "vite": "7.3.7",
+    "vite-plugin-singlefile": "^2.3.3"
+  }
+}
