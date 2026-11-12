@@ -1,6 +1,6 @@
-import { useMemo, useState, type ReactNode } from 'react'
+import { useLayoutEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { Link } from 'react-router'
-import { ArrowRight, BadgeCheck, Quote } from 'lucide-react'
+import { ArrowRight, BadgeCheck, ChevronDown, Quote } from 'lucide-react'
 import { useContent } from '../../hooks/useContent'
 import { useWhatsApp } from '../../hooks/useWhatsApp'
 import { cn, img, paragraphs, safeUrl } from '../../lib/utils'
@@ -129,12 +129,42 @@ export function ServicesSection() {
 }
 
 /* ---------------- Work ---------------- */
+/** How many apps the home page shows before "Show more". */
+const WORK_INITIAL_COUNT = 6
+
 export function WorkSection() {
   const { projects, categories, categoryById } = useContent()
   const [tab, setTab] = useState('all')
+  const [expanded, setExpanded] = useState(false)
+  const toggleRef = useRef<HTMLButtonElement>(null)
+  /** Where the toggle button was on screen before "Show less", so the page can keep it in place. */
+  const toggleTop = useRef<number | null>(null)
   const tabs = useMemo(() => categories.filter((category) => projects.some((p) => p.categoryIds.includes(category.id))), [categories, projects])
-  const shown = useMemo(() => (tab === 'all' ? projects : projects.filter((p) => p.categoryIds.includes(tab))).slice(0, 6), [projects, tab])
+  const inTab = useMemo(() => (tab === 'all' ? projects : projects.filter((p) => p.categoryIds.includes(tab))), [projects, tab])
+  const shown = expanded ? inTab : inTab.slice(0, WORK_INITIAL_COUNT)
+  const canToggle = inTab.length > WORK_INITIAL_COUNT
+
+  // After "Show less" the list gets shorter. Scroll by the same amount so the button stays under the
+  // pointer, instead of leaving the visitor further down the page.
+  useLayoutEffect(() => {
+    const before = toggleTop.current
+    toggleTop.current = null
+    if (expanded || before === null || !toggleRef.current) return
+    const moved = toggleRef.current.getBoundingClientRect().top - before
+    if (moved) window.scrollBy({ top: moved, behavior: 'instant' })
+  }, [expanded])
+
   if (!projects.length) return null
+
+  const selectTab = (id: string) => {
+    setTab(id)
+    setExpanded(false)
+  }
+
+  const toggle = () => {
+    if (expanded) toggleTop.current = toggleRef.current?.getBoundingClientRect().top ?? null
+    setExpanded(!expanded)
+  }
 
   return (
     <section id="work" className="scroll-mt-20 py-6 md:py-10">
@@ -156,7 +186,7 @@ export function WorkSection() {
                 type="button"
                 role="tab"
                 aria-selected={tab === c.id}
-                onClick={() => setTab(c.id)}
+                onClick={() => selectTab(c.id)}
                 className={cn(
                   'shrink-0 rounded-full border px-4 py-2 text-sm font-semibold transition-colors',
                   tab === c.id ? 'border-accent bg-accent text-on-accent' : 'border-line text-ink-muted hover:border-line-strong hover:text-ink',
@@ -167,11 +197,19 @@ export function WorkSection() {
             ))}
           </div>
         )}
-        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div id="work-grid" className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {shown.map((p) => (
             <ProjectCard key={p.id} project={p} category={categoryById.get(p.categoryIds[0] ?? '')} />
           ))}
         </div>
+        {canToggle && (
+          <div className="mt-8 flex justify-center">
+            <button ref={toggleRef} type="button" className="btn btn-outline" onClick={toggle} aria-controls="work-grid" aria-expanded={expanded}>
+              {expanded ? 'Show less' : 'Show more'}
+              <ChevronDown className={cn('size-4 transition-transform', expanded && 'rotate-180')} aria-hidden="true" />
+            </button>
+          </div>
+        )}
       </div>
     </section>
   )

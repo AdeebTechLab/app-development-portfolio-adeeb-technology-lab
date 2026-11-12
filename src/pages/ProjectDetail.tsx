@@ -5,7 +5,7 @@ import { useContent } from '../hooks/useContent'
 import { useWhatsApp } from '../hooks/useWhatsApp'
 import { useSeo } from '../lib/seo'
 import { PLATFORM_LABELS, STATUS_LABELS, type ImageItem, type Project } from '../lib/types'
-import { cn, formatMonth, linkLabel, paragraphs, projectInquiryMessage, projectUrl, safeUrl, shareImage } from '../lib/utils'
+import { cn, formatMonth, githubRepo, linkLabel, paragraphs, projectInquiryMessage, projectUrl, safeUrl, shareImage } from '../lib/utils'
 import { CallToAction } from '../components/CallToAction'
 import { BrandIcon } from '../components/icons/BrandIcon'
 import { useSetWhatsAppMessage } from '../components/layout/WhatsAppContext'
@@ -93,6 +93,8 @@ function ProjectView({ project }: { project: Project }) {
   const appStore = safeUrl(project.appStoreUrl)
   const coverOffset = project.coverImage ? 1 : 0
   const source = safeUrl(project.sourceUrl)
+  const repo = source ? githubRepo(source) : null
+  const sourceLabel = repo ? 'View on GitHub' : 'View source code'
   const testimonial = client?.testimonial
 
   return (
@@ -143,6 +145,12 @@ function ProjectView({ project }: { project: Project }) {
                 <a href={live} target="_blank" rel="noopener noreferrer" className={cn('btn', play || appStore ? 'btn-outline' : 'btn-primary')}>
                   {linkLabel(live)}
                   <ArrowUpRight className="size-4" aria-hidden="true" />
+                </a>
+              )}
+              {!live && source && (
+                <a href={source} target="_blank" rel="noopener noreferrer" className={cn('btn', play || appStore ? 'btn-outline' : 'btn-primary')}>
+                  {repo ? <BrandIcon name="github" className="size-[18px]" /> : <Code className="size-4" aria-hidden="true" />}
+                  {sourceLabel}
                 </a>
               )}
               <a href={wa.link(inquiry)} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
@@ -280,7 +288,7 @@ function ProjectView({ project }: { project: Project }) {
                   </ul>
                 </div>
               )}
-              {(source || project.extraLinks.length > 0) && (
+              {project.extraLinks.length > 0 && (
                 <div className="mt-5">
                   <h3 className="text-xs font-bold text-ink-faint">Links</h3>
                   <ul className="mt-2 space-y-1.5 text-sm">
@@ -294,17 +302,25 @@ function ProjectView({ project }: { project: Project }) {
                         </li>
                       ) : null
                     })}
-                    {source && (
-                      <li>
-                        <a href={source} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-semibold text-accent-text hover:underline">
-                          <Code className="size-4" aria-hidden="true" /> Source code
-                        </a>
-                      </li>
-                    )}
                   </ul>
                 </div>
               )}
             </div>
+
+            {source && (
+              <section className="card p-6" aria-labelledby="source-heading">
+                <h2 id="source-heading" className="flex items-center gap-2.5 text-base font-bold text-ink">
+                  {repo ? <BrandIcon name="github" className="size-5" /> : <Code className="size-5 text-accent-text" aria-hidden="true" />}
+                  {repo ? 'GitHub' : 'Source code'}
+                </h2>
+                <p className="mt-2 text-sm text-ink-muted">Browse the source code for this app.</p>
+                {repo && <p className="mt-3 truncate rounded-lg border border-line bg-page-deep px-3 py-2 font-mono text-xs text-ink-muted" title={repo}>{repo}</p>}
+                <a href={source} target="_blank" rel="noopener noreferrer" className="btn btn-outline mt-4 w-full">
+                  {sourceLabel}
+                  <ArrowUpRight className="size-4" aria-hidden="true" />
+                </a>
+              </section>
+            )}
 
             <div className="card p-6">
               <h2 className="text-base font-bold text-ink">Want an app like this?</h2>
