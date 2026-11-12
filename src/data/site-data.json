@@ -1,7 +1,7 @@
 {
   "app": "adeebtechlab-app",
   "version": 1,
-  "updatedAt": 1794391910779,
+  "updatedAt": 1794509761426,
   "settings": {
     "companyName": "Adeeb Technology Lab",
     "tagline": "App Development / Software House",
@@ -269,6 +269,14 @@
       "description": "Apps for shops, services and companies: catalogues, ordering, bookings and customer accounts.",
       "icon": "store",
       "order": 4
+    },
+    {
+      "id": "cat-utility",
+      "slug": "utility-apps",
+      "name": "Utility apps",
+      "description": "Handy everyday tools: device remotes, quick access to online services and other apps that save time.",
+      "icon": "wrench",
+      "order": 5
     }
   ],
   "technologies": [
@@ -708,7 +716,7 @@
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.AdeebTechLab.GCT.BWP.College",
       "appStoreUrl": "",
       "liveUrl": "",
-      "sourceUrl": "",
+      "sourceUrl": "https://github.com/AdeebTechLab/GCT_BWP-App",
       "extraLinks": [],
       "completedAt": "",
       "status": "completed",
@@ -716,7 +724,7 @@
       "featured": true,
       "order": 3,
       "createdAt": 1794355200000,
-      "updatedAt": 1794391910779,
+      "updatedAt": 1794509761426,
       "id": "p-gct-bwp-college",
       "slug": "gct-bwp-college",
       "title": "GCT BWP College",
@@ -794,7 +802,7 @@
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.AdeebTechLab.RahamTV",
       "appStoreUrl": "",
       "liveUrl": "",
-      "sourceUrl": "",
+      "sourceUrl": "https://github.com/AdeebTechLab/RahamTV-App",
       "extraLinks": [
         {
           "label": "Raham TV sticker app (download)",
@@ -807,7 +815,7 @@
       "featured": false,
       "order": 5,
       "createdAt": 1794355200000,
-      "updatedAt": 1794391910779,
+      "updatedAt": 1794509761426,
       "id": "p-raham-tv",
       "slug": "raham-tv",
       "title": "Raham TV",
@@ -842,7 +850,7 @@
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.AdeebTechLab.IUBWhatsAppSticker",
       "appStoreUrl": "",
       "liveUrl": "",
-      "sourceUrl": "",
+      "sourceUrl": "https://github.com/AdeebTechLab/IUB_Sticker_For_WhatsApp-App",
       "extraLinks": [],
       "completedAt": "",
       "status": "completed",
@@ -850,7 +858,7 @@
       "featured": false,
       "order": 6,
       "createdAt": 1794355200000,
-      "updatedAt": 1794391910779,
+      "updatedAt": 1794509761426,
       "id": "p-iub-stickers",
       "slug": "iub-portals-stickers",
       "title": "IUB Portals Stickers",
@@ -885,7 +893,7 @@
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.AdeebTechLab.AdeebTechLabSticker",
       "appStoreUrl": "",
       "liveUrl": "",
-      "sourceUrl": "",
+      "sourceUrl": "https://github.com/AdeebTechLab/Adeeb_Tech_Lab_Sticker_For_Whastapp-App",
       "extraLinks": [],
       "completedAt": "",
       "status": "completed",
@@ -893,11 +901,626 @@
       "featured": false,
       "order": 7,
       "createdAt": 1794355200000,
-      "updatedAt": 1794391910779,
+      "updatedAt": 1794509761426,
       "id": "p-atl-stickers",
       "slug": "adeeb-tech-lab-stickers",
       "title": "Adeeb Tech Lab Stickers",
       "summary": "A sticker app with Adeeb Technology Lab stickers for our students and community to share in WhatsApp chats."
+    },
+    {
+      "coverImage": {
+        "url": "/covers/the-computer-courses-bwp.jpg",
+        "alt": "The Computer Courses BWP feature banner: welcome, information and home screens of the app"
+      },
+      "gallery": [],
+      "clientId": "",
+      "problem": "",
+      "solution": "",
+      "appStoreUrl": "",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.AdeebTechLab.ComputerCoursesBWP",
+      "liveUrl": "",
+      "sourceUrl": "",
+      "extraLinks": [
+        {
+          "label": "The Computer Courses website",
+          "url": "https://the-computer-courses-web.vercel.app"
+        }
+      ],
+      "completedAt": "",
+      "status": "completed",
+      "published": true,
+      "featured": false,
+      "id": "p-the-computer-courses",
+      "slug": "the-computer-courses-bwp",
+      "title": "The Computer Courses BWP",
+      "summary": "A Flutter app for The Computer Courses, where students browse courses, books and campuses and contact the institute from their phones.",
+      "description": "The Computer Courses BWP app brings the institute’s courses, books and campuses into one app, published on Google Play.\n\nStudents can browse more than 20 courses, from freelancing, graphic design and video editing to web and app development, cyber security and machine learning, see what each course covers and which campus offers it, and get in touch with the team. The institute also has a companion website.",
+      "logo": "/icons/the-computer-courses.png",
+      "categoryIds": [
+        "cat-education"
+      ],
+      "serviceIds": [
+        "svc-cross-platform-apps",
+        "svc-education-apps",
+        "svc-store-publishing"
+      ],
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Android"
+      ],
+      "features": [
+        "Course catalogue with the tools covered in each course",
+        "Separate course lists for the Bahawalpur and Islamabad campuses",
+        "Books section and campus details",
+        "Welcome and onboarding screens",
+        "Contact and About us screens"
+      ],
+      "platforms": [
+        "android"
+      ],
+      "order": 8,
+      "createdAt": 1794508054341,
+      "updatedAt": 1794509452004
+    },
+    {
+      "coverImage": {
+        "url": "/covers/bs-is-online-attendance-system.jpg",
+        "alt": "Bs.IS Online Attendance System feature banner: login, home and attendance screens of the app"
+      },
+      "gallery": [],
+      "clientId": "client-3",
+      "problem": "",
+      "solution": "",
+      "appStoreUrl": "",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.AdeebTechLab.BSIS.Class.Attendance",
+      "liveUrl": "",
+      "sourceUrl": "https://github.com/AdeebTechLab/Bs_IS_Online_Attendance_System-App",
+      "extraLinks": [],
+      "completedAt": "",
+      "status": "completed",
+      "published": true,
+      "featured": false,
+      "id": "p-bs-is-attendance",
+      "slug": "bs-is-online-attendance-system",
+      "title": "Bs.IS Online Attendance System",
+      "summary": "An Android attendance app for the Department of Information Security, where each teacher signs in and marks class attendance from their phone.",
+      "description": "We built this attendance app for the BS Information Security class and published it on Google Play.\n\nEach teacher signs in to open their own attendance sheet. Records are kept in Google Sheets, so the department can review attendance without any extra software.",
+      "logo": "/icons/bs-is-attendance.png",
+      "categoryIds": [
+        "cat-education"
+      ],
+      "serviceIds": [
+        "svc-android-apps",
+        "svc-education-apps",
+        "svc-store-publishing"
+      ],
+      "technologies": [
+        "Android",
+        "Java",
+        "Google Sheets"
+      ],
+      "features": [
+        "Teacher sign-in that opens each teacher’s own attendance sheet",
+        "Attendance records kept in Google Sheets",
+        "Built-in form and class information screens"
+      ],
+      "platforms": [
+        "android"
+      ],
+      "order": 9,
+      "createdAt": 1794508054341,
+      "updatedAt": 1794509761426
+    },
+    {
+      "coverImage": {
+        "url": "/covers/atlab-office-remote.jpg",
+        "alt": "ATLab Office Remote feature banner: the remote with all devices on and all devices off"
+      },
+      "gallery": [],
+      "clientId": "",
+      "problem": "",
+      "solution": "",
+      "appStoreUrl": "",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.AdeebTechLab.ATLabOffice",
+      "liveUrl": "",
+      "sourceUrl": "https://github.com/AdeebTechLab/Adeeb_Tech_Lab_Office_Remote-App",
+      "extraLinks": [],
+      "completedAt": "",
+      "status": "completed",
+      "published": true,
+      "featured": false,
+      "id": "p-atlab-office-remote",
+      "slug": "atlab-office-remote",
+      "title": "ATLab Office Remote",
+      "summary": "An Android remote that switches office lights and devices on and off over Bluetooth through an Arduino-based controller.",
+      "description": "ATLab Office Remote turns a phone into a remote for office or home automation. It connects over Bluetooth to an Arduino-based controller, such as one with an HC-05 or HC-06 module, and each button sends a command that switches a device on or off.\n\nIt works offline with paired devices and is published on Google Play.",
+      "logo": "/icons/atlab-office-remote.png",
+      "categoryIds": [
+        "cat-utility"
+      ],
+      "serviceIds": [
+        "svc-android-apps",
+        "svc-store-publishing"
+      ],
+      "technologies": [
+        "Android",
+        "Kotlin",
+        "Bluetooth",
+        "Arduino"
+      ],
+      "features": [
+        "Connects to Arduino Bluetooth modules (HC-05 / HC-06)",
+        "On and off buttons for up to 9 devices",
+        "Works offline with paired devices",
+        "Simple, clear layout"
+      ],
+      "platforms": [
+        "android"
+      ],
+      "order": 10,
+      "createdAt": 1794508054341,
+      "updatedAt": 1794509761426
+    },
+    {
+      "coverImage": {
+        "url": "/covers/arbabnet-provider.jpg",
+        "alt": "ArbabNet Provider feature banner: features of the customer app and the admin panel"
+      },
+      "gallery": [],
+      "clientId": "",
+      "problem": "",
+      "solution": "",
+      "appStoreUrl": "",
+      "playStoreUrl": "",
+      "liveUrl": "",
+      "sourceUrl": "https://github.com/AdeebTechLab/Arbab_Net_Provider",
+      "extraLinks": [],
+      "completedAt": "",
+      "status": "completed",
+      "published": true,
+      "featured": false,
+      "id": "p-arbabnet-provider",
+      "slug": "arbabnet-provider",
+      "title": "ArbabNet Provider",
+      "summary": "An ISP management app with a customer panel and an admin panel for packages, payments, support tickets and notifications.",
+      "description": "ArbabNet Provider is a complete app for an internet service provider. Customers see their connection status and plan, browse packages, subscribe or renew by bank transfer with a receipt upload, and raise support tickets.\n\nThe admin panel lets the provider manage users, verify payments, handle tickets, edit packages and send push notifications. It is built with Flutter and Firebase.",
+      "logo": "/icons/arbabnet-provider.png",
+      "categoryIds": [
+        "cat-business"
+      ],
+      "serviceIds": [
+        "svc-cross-platform-apps",
+        "svc-business-apps",
+        "svc-admin-panels",
+        "svc-backend-apis",
+        "svc-push-notifications"
+      ],
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "Firebase",
+        "Riverpod",
+        "OneSignal",
+        "Cloudinary"
+      ],
+      "features": [
+        "Customer dashboard with connection status and plan details",
+        "Subscribe, change or renew packages with bank transfer receipt upload",
+        "Payment and package change history",
+        "Support tickets and FAQ",
+        "Biometric login",
+        "Admin panel for users, payment verification, tickets and packages",
+        "Broadcast push notifications"
+      ],
+      "platforms": [
+        "android"
+      ],
+      "order": 11,
+      "createdAt": 1794508054341,
+      "updatedAt": 1794509761426
+    },
+    {
+      "coverImage": {
+        "url": "/covers/jan-cable-tv-internet.jpg",
+        "alt": "Jan Cable TV & Internet feature banner: what subscribers can see in the app"
+      },
+      "gallery": [],
+      "clientId": "",
+      "problem": "",
+      "solution": "",
+      "appStoreUrl": "",
+      "playStoreUrl": "",
+      "liveUrl": "",
+      "sourceUrl": "https://github.com/AdeebTechLab/Jan_Cable_Tv_internet-App",
+      "extraLinks": [],
+      "completedAt": "",
+      "status": "completed",
+      "published": true,
+      "featured": false,
+      "id": "p-jan-cable-tv",
+      "slug": "jan-cable-tv-internet",
+      "title": "Jan Cable TV & Internet",
+      "summary": "An Android app for Jan Cable TV & Internet subscribers to sign in and check their package, remaining data and expiry date.",
+      "description": "We built this app for Jan Cable TV & Internet, a local cable and internet provider. Subscribers sign in to see their package details, remaining data, speed and expiry date without logging in to a web portal.\n\nThe app uses Firebase for accounts and data, with Google sign-in, biometric login and push notifications.",
+      "logo": "/icons/jan-cable-tv.png",
+      "categoryIds": [
+        "cat-business"
+      ],
+      "serviceIds": [
+        "svc-android-apps",
+        "svc-business-apps",
+        "svc-backend-apis",
+        "svc-push-notifications"
+      ],
+      "technologies": [
+        "Android",
+        "Java",
+        "Firebase",
+        "OneSignal"
+      ],
+      "features": [
+        "Sign up and sign in, including Google sign-in",
+        "Dashboard with package, remaining data, speed and expiry date",
+        "Payment records",
+        "Biometric login",
+        "Push notifications"
+      ],
+      "platforms": [
+        "android"
+      ],
+      "order": 12,
+      "createdAt": 1794508054341,
+      "updatedAt": 1794509761426
+    },
+    {
+      "coverImage": {
+        "url": "/covers/pak-info-database.jpg",
+        "alt": "Pak Info Database feature banner: bill checks, vehicle, NTN, passport, licence, parcel and FIR services"
+      },
+      "gallery": [],
+      "clientId": "",
+      "problem": "",
+      "solution": "",
+      "appStoreUrl": "",
+      "playStoreUrl": "",
+      "liveUrl": "",
+      "sourceUrl": "https://github.com/AdeebTechLab/Pak-Info-Database",
+      "extraLinks": [],
+      "completedAt": "",
+      "status": "completed",
+      "published": true,
+      "featured": false,
+      "id": "p-pak-info-database",
+      "slug": "pak-info-database",
+      "title": "Pak Info Database",
+      "summary": "An Android app that gathers everyday online services in Pakistan in one place: bill checks, vehicle and NTN verification, passport and licence inquiries and parcel tracking.",
+      "description": "Pak Info Database brings the online services people in Pakistan use most often into one app, so they don’t have to search for each website.\n\nUsers can check electricity, Sui gas and internet bills, verify a vehicle, look up an NTN, make passport and driving licence inquiries, track parcels and reach e-challan and online FIR services, all inside the app. We first built it in Java and later rebuilt it in Flutter.",
+      "logo": "/icons/pak-info-database.png",
+      "categoryIds": [
+        "cat-utility"
+      ],
+      "serviceIds": [
+        "svc-android-apps",
+        "svc-cross-platform-apps"
+      ],
+      "technologies": [
+        "Android",
+        "Java",
+        "Flutter",
+        "Dart"
+      ],
+      "features": [
+        "Electricity, Sui gas and internet bill checks",
+        "Vehicle verification and NTN inquiry",
+        "Passport and driving licence inquiries",
+        "Parcel tracking",
+        "E-challan and online FIR services",
+        "Each service opens in an in-app browser"
+      ],
+      "platforms": [
+        "android"
+      ],
+      "order": 13,
+      "createdAt": 1794508054341,
+      "updatedAt": 1794509761426
+    },
+    {
+      "coverImage": {
+        "url": "/covers/dae-cit-books.jpg",
+        "alt": "DAE CIT Books feature banner: books for each year, syllabus, objectives and teachers"
+      },
+      "gallery": [],
+      "clientId": "",
+      "problem": "",
+      "solution": "",
+      "appStoreUrl": "",
+      "playStoreUrl": "",
+      "liveUrl": "",
+      "sourceUrl": "https://github.com/AdeebTechLab/DAE_CIT_Books_App",
+      "extraLinks": [],
+      "completedAt": "",
+      "status": "completed",
+      "published": true,
+      "featured": false,
+      "id": "p-dae-cit-books",
+      "slug": "dae-cit-books",
+      "title": "DAE CIT Books",
+      "summary": "An Android app with the books, syllabus and objectives for DAE Computer Information Technology students, organised by year.",
+      "description": "DAE CIT Books puts the books for the Diploma of Associate Engineer in Computer Information Technology (CIT) in one Android app, so students can find their 1st, 2nd and 3rd year books quickly.\n\nThe app also includes the course syllabus, objectives and teacher information. It was previously published on Google Play.",
+      "logo": "/icons/dae-cit-books.png",
+      "categoryIds": [
+        "cat-education"
+      ],
+      "serviceIds": [
+        "svc-android-apps",
+        "svc-education-apps"
+      ],
+      "technologies": [
+        "Android",
+        "Java"
+      ],
+      "features": [
+        "Books for 1st, 2nd and 3rd year, organised by year",
+        "Course syllabus and objectives",
+        "Teacher information"
+      ],
+      "platforms": [
+        "android"
+      ],
+      "order": 14,
+      "createdAt": 1794508054341,
+      "updatedAt": 1794509761426
+    },
+    {
+      "coverImage": {
+        "url": "/covers/iub-portals-new-tab.jpg",
+        "alt": "IUB Portals New Tab feature banner: the student dashboard with clock, weather and IUB portal links"
+      },
+      "gallery": [],
+      "clientId": "",
+      "problem": "",
+      "solution": "",
+      "appStoreUrl": "",
+      "playStoreUrl": "",
+      "liveUrl": "",
+      "sourceUrl": "https://github.com/AdeebTechLab/IUB_Portals_New_Tab",
+      "extraLinks": [],
+      "completedAt": "",
+      "status": "completed",
+      "published": true,
+      "featured": false,
+      "id": "p-iub-new-tab",
+      "slug": "iub-portals-new-tab",
+      "title": "IUB Portals New Tab",
+      "summary": "A Chrome extension that turns every new tab into a student dashboard for IUB, with university portals, live info and productivity tools.",
+      "description": "IUB Portals New Tab replaces Chrome’s new tab page with a personalised dashboard for students of The Islamia University of Bahawalpur.\n\nIt puts My IUB, the E-Portal and the LMS one click away, next to university announcements, live weather, a clock, bookmarks, a to-do list and AI tool shortcuts. Everything runs in the browser, with no backend server.",
+      "logo": "https://res.cloudinary.com/adeeb-tech-lab/image/upload/v1757196675/Company%20Logo/IUB_Portals_Logo_copy_rpgxkx.png",
+      "categoryIds": [
+        "cat-education"
+      ],
+      "serviceIds": [
+        "svc-desktop-extensions",
+        "svc-education-apps"
+      ],
+      "technologies": [
+        "JavaScript",
+        "Chrome Extension"
+      ],
+      "features": [
+        "One-click access to My IUB, E-Portal and LMS",
+        "Announcement slider for fees, admissions, merit lists and transport",
+        "Live clock, weather and time-of-day greeting",
+        "Multi-engine search bar",
+        "Bookmarks, to-do list and AI tool shortcuts",
+        "Theme-switchable glass design"
+      ],
+      "platforms": [
+        "chrome"
+      ],
+      "order": 15,
+      "createdAt": 1794508054341,
+      "updatedAt": 1794509761426
+    },
+    {
+      "coverImage": {
+        "url": "/covers/adeeb-ai-voice-interview-agent.jpg",
+        "alt": "Adeeb AI Voice Interview Agent feature banner: the interview join screen in the browser"
+      },
+      "gallery": [],
+      "clientId": "",
+      "problem": "",
+      "solution": "",
+      "appStoreUrl": "",
+      "playStoreUrl": "",
+      "liveUrl": "",
+      "sourceUrl": "https://github.com/AdeebTechLab/Adeeb-AI-Voice-interview-Agent-Desktop",
+      "extraLinks": [],
+      "completedAt": "",
+      "status": "completed",
+      "published": true,
+      "featured": false,
+      "id": "p-ai-interview-agent",
+      "slug": "adeeb-ai-voice-interview-agent",
+      "title": "Adeeb AI Voice Interview Agent",
+      "summary": "A Windows app that runs AI-assisted voice interviews in the browser, with configurable questions, speech recognition and an admin interface.",
+      "description": "Adeeb AI Voice Interview Agent runs AI-assisted voice interviews on a Windows PC through a local browser interface. Candidates answer by voice, the app transcribes what they say and replies with text-to-speech.\n\nCompanies set their own interview questions and company information and manage everything from an admin interface. An optional temporary link lets people join from a phone or another device.",
+      "logo": "/icons/ai-interview-agent.png",
+      "categoryIds": [
+        "cat-business"
+      ],
+      "serviceIds": [
+        "svc-desktop-extensions",
+        "svc-business-apps",
+        "svc-admin-panels"
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "Faster Whisper",
+        "Windows"
+      ],
+      "features": [
+        "AI-assisted voice interview flow",
+        "Speech-to-text with Faster Whisper and text-to-speech with Edge TTS",
+        "Configurable interview questions and company knowledge",
+        "Admin interface",
+        "Optional temporary link for access from a phone or another device",
+        "Built-in setup, repair and system-check scripts"
+      ],
+      "platforms": [
+        "windows"
+      ],
+      "order": 16,
+      "createdAt": 1794508054341,
+      "updatedAt": 1794509761426
+    },
+    {
+      "coverImage": {
+        "url": "/covers/online-work-order.jpg",
+        "alt": "Online Work Order feature banner: graphic design, video, animation, house maps, website and app design services"
+      },
+      "gallery": [],
+      "clientId": "",
+      "problem": "",
+      "solution": "",
+      "appStoreUrl": "",
+      "playStoreUrl": "",
+      "liveUrl": "",
+      "sourceUrl": "https://github.com/AdeebTechLab/Online_Work_Order-App",
+      "extraLinks": [],
+      "completedAt": "",
+      "status": "completed",
+      "published": true,
+      "featured": false,
+      "id": "p-online-work-order",
+      "slug": "online-work-order",
+      "title": "Online Work Order",
+      "summary": "An Android app where customers choose a design, video or tech service and go straight to the right team to place their order.",
+      "description": "Online Work Order lets customers pick the service they need, from Photoshop editing and Premiere Pro or After Effects video work to AutoCAD drawings, website design and app design, and go straight to the right team to place an order.",
+      "logo": "/icons/online-work-order.png",
+      "categoryIds": [
+        "cat-business"
+      ],
+      "serviceIds": [
+        "svc-android-apps",
+        "svc-business-apps"
+      ],
+      "technologies": [
+        "Android",
+        "Java"
+      ],
+      "features": [
+        "One screen listing every service",
+        "Each service opens its own order page",
+        "Photoshop, Premiere Pro, After Effects, AutoCAD, website design and app design"
+      ],
+      "platforms": [
+        "android"
+      ],
+      "order": 17,
+      "createdAt": 1794508054341,
+      "updatedAt": 1794509761426
+    },
+    {
+      "coverImage": {
+        "url": "/covers/raham-tv-stickers.jpg",
+        "alt": "Raham TV Stickers feature banner: a selection of Raham TV WhatsApp stickers"
+      },
+      "gallery": [],
+      "clientId": "client-4",
+      "problem": "",
+      "solution": "",
+      "appStoreUrl": "",
+      "playStoreUrl": "",
+      "liveUrl": "",
+      "sourceUrl": "https://github.com/AdeebTechLab/Raham_TV_Sticker_For_WhatsApp-App",
+      "extraLinks": [
+        {
+          "label": "Download the app",
+          "url": "https://drive.google.com/file/d/1yFjgzTokZQVjD0CdQZYBCbrkJC1zGhwZ/view?usp=sharing"
+        }
+      ],
+      "completedAt": "",
+      "status": "completed",
+      "published": true,
+      "featured": false,
+      "id": "p-raham-tv-stickers",
+      "slug": "raham-tv-stickers",
+      "title": "Raham TV Stickers",
+      "summary": "A WhatsApp sticker app for Raham TV fans, with branded sticker packs to share in their chats.",
+      "description": "We made this sticker app for Raham TV so fans can add the channel’s branded sticker packs to WhatsApp and share them in their chats.\n\nIt is a companion to the Raham TV app.",
+      "logo": "https://res.cloudinary.com/adeeb-tech-lab/image/upload/v1757196623/Company%20Logo/unnamed_zdfeih.png",
+      "categoryIds": [
+        "cat-stickers"
+      ],
+      "serviceIds": [
+        "svc-sticker-apps"
+      ],
+      "technologies": [
+        "Android",
+        "Java",
+        "WhatsApp Stickers"
+      ],
+      "features": [
+        "9 sticker packs, including Raham TV, English, Pakistan and logo packs",
+        "Add packs to WhatsApp in one tap"
+      ],
+      "platforms": [
+        "android"
+      ],
+      "order": 18,
+      "createdAt": 1794508054341,
+      "updatedAt": 1794509761426
+    },
+    {
+      "coverImage": {
+        "url": "/covers/adeeb-tech-lab-new-tab.jpg",
+        "alt": "Adeeb Tech Lab New Tab feature banner: the new tab page with free courses, search and shortcuts"
+      },
+      "gallery": [],
+      "clientId": "",
+      "problem": "",
+      "solution": "",
+      "appStoreUrl": "",
+      "playStoreUrl": "",
+      "liveUrl": "",
+      "sourceUrl": "https://github.com/AdeebTechLab/Adeeb-Technology-Lab-New-Tab",
+      "extraLinks": [],
+      "completedAt": "",
+      "status": "completed",
+      "published": true,
+      "featured": false,
+      "id": "p-atl-new-tab",
+      "slug": "adeeb-tech-lab-new-tab",
+      "title": "Adeeb Tech Lab New Tab",
+      "summary": "A Chrome new tab for the Adeeb Technology Lab community, with free course links, registration forms, search and quick tools on every new tab.",
+      "description": "This Chrome extension replaces the browser’s default new tab with an Adeeb Technology Lab dashboard.\n\nEvery new tab shows links to our free courses, registration forms for teachers, jobs, internships and courses, a Google search bar, the time, date and weather, and quick links to Google apps and AI tools. It is lightweight and built without heavy frameworks.",
+      "logo": "https://res.cloudinary.com/adeeb-tech-lab/image/upload/v1757196590/Company%20Logo/512_exyyiy.png",
+      "categoryIds": [
+        "cat-education"
+      ],
+      "serviceIds": [
+        "svc-desktop-extensions",
+        "svc-education-apps"
+      ],
+      "technologies": [
+        "JavaScript",
+        "Chrome Extension"
+      ],
+      "features": [
+        "Free course links, from YouTube and Photoshop to IoT and After Effects",
+        "Registration forms for teachers, jobs, internships and courses",
+        "Google search bar with clock, date and weather",
+        "Editable shortcuts and a daily task list",
+        "Quick links to Google apps, AI tools and live chat"
+      ],
+      "platforms": [
+        "chrome"
+      ],
+      "order": 19,
+      "createdAt": 1794508054341,
+      "updatedAt": 1794509761426
     }
   ]
 }

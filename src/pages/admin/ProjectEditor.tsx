@@ -473,7 +473,7 @@ function Editor({ project }: { project: Project | null }) {
               <Field label="Website or web version" htmlFor="f-liveUrl" error={errors.liveUrl}>
                 <input id="f-liveUrl" className="input" inputMode="url" value={form.liveUrl} onChange={(e) => set('liveUrl', e.target.value)} placeholder="https://" />
               </Field>
-              <Field label="Source code link" htmlFor="f-sourceUrl" error={errors.sourceUrl} hint="Only if the client agreed to share the code.">
+              <Field label="Source code link (GitHub)" htmlFor="f-sourceUrl" error={errors.sourceUrl} hint="Shown as a GitHub section on the app page. Only if the client agreed to share the code.">
                 <input id="f-sourceUrl" className="input" inputMode="url" value={form.sourceUrl} onChange={(e) => set('sourceUrl', e.target.value)} placeholder="https://github.com/…" />
               </Field>
             </div>

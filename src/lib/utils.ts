@@ -99,6 +99,12 @@ export function shareImage(cover?: string, logo?: string) {
 }
 
 /** Friendly button text for a project link. */
+/** "owner/repo" for a GitHub repository link, otherwise null. */
+export function githubRepo(url: string) {
+  const m = /^https?:\/\/(?:www\.)?github\.com\/([\w.-]+)\/([\w.-]+?)(?:\.git)?\/?(?:[?#].*)?$/i.exec(url)
+  return m ? `${m[1]}/${m[2]}` : null
+}
+
 export function linkLabel(url: string, fallback = 'Visit website') {
   if (/play\.google\.com/i.test(url)) return 'Get it on Google Play'
   if (/apps\.apple\.com/i.test(url)) return 'Download on the App Store'
